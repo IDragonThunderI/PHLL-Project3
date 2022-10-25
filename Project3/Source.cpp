@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-void main()
+int main()
 {
 	double a, b, c, d;
 	double x = 0;
 	
-	cout << "Enter a, b, c, d" << endl;
+	cout << "Enter a, b, c, d: ";
 	cin >> a >> b >> c >> d;
 	
 	if (a < b && b < c && c < d) x = max(max(a, b), max(c, d));
@@ -18,4 +18,5 @@ void main()
 	cout << "a = " << a << "\tb = " << b << "\tc = " << c << "\td = " << d << endl;
 
 	system("Pause");
+	return 0;
 }
